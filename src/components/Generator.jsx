@@ -16,7 +16,6 @@ function Header({index, title, desc}) {
   )
 }
 
-<<<<<<< HEAD
 export const Generator = ({ 
   poison,
   setPoison,
@@ -29,14 +28,6 @@ export const Generator = ({
 
   const [showModal, setShowModal] = useState(false)
   
-=======
-export const Generator = () => {
-
-  const [showModal, setShowModal] = useState(false)
-  const [poison, setPoison] = useState('individual')
-  const [muscles, setMuscles] = useState([])
-  const [goal, setGoal] = useState('strength_power')
->>>>>>> 2629aebe741348e1fc867eac17f2653ff01e1160
 
   function handleToggleModal() {
      setShowModal(!showModal)
@@ -106,7 +97,7 @@ export const Generator = () => {
 
       <Header index={'03'} title={'Become a Juggernaut'} desc={'Select your ultimate objective.'}/>
       
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {Object.keys(SCHEMES).map((scheme, schemeIdx) => {
           return (
             <button onClick={() => {setGoal(scheme)}} key={schemeIdx} className={'bg-slate-950 border-solid duration-200 py-3 rounded-lg hover:border-blue-600 ' + (scheme === goal ? 'border-blue-600' : 'border-blue-400')}>
@@ -116,11 +107,7 @@ export const Generator = () => {
         })}
       </div>
       
-<<<<<<< HEAD
       <Button func={updateWorkout} text={'Formulate'}/>
-=======
-      <Button text={'Formulate'}/>
->>>>>>> 2629aebe741348e1fc867eac17f2653ff01e1160
     </SectionWrapper>
   )
 }
