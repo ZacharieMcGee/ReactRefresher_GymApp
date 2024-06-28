@@ -8,7 +8,9 @@ export const Hero = () => {
         <h1 className="uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Swole<span className="text-blue-400">normous</span></h1>
       </div>
       <p className="text-sm md:text-base font-light">I hereby acknowledge that I may become <span className="text-blue-400 font-medium">unbelievable swolenormous</span> and accept all risks of becoming the local <span className="text-blue-400 font-medium">mass monstrosity</span>, afflicted with sever body dismorphia, unable to fit through doors.</p>
-      <Button text={'Accept & Begin'} />
+      <Button func={() => {
+        window.location.href='#generate'
+      }} text={'Accept & Begin'} />
     </div>
   )
 }

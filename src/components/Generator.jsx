@@ -58,7 +58,7 @@ export const Generator = ({
   }
 
   return (
-    <SectionWrapper header={"generate your workout"} title={["It's", "Huge", "o'clock"]}>
+    <SectionWrapper id={'generate'} header={"generate your workout"} title={["It's", "Huge", "o'clock"]}>
       <Header index={'01'} title={'Pick your poison'} desc={'Select the workout you wish to endure.'}/>
       
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
